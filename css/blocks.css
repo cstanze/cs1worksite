@@ -1,0 +1,53 @@
+.block {
+  display: flex;
+  flex: 1;  
+}
+
+.block.block-col {
+  flex-direction: column;
+}
+
+/*
+  Assume the following layout:
+
+  div.block.block-col.block-sub-row
+  - div (any children)
+  - div
+  ...
+ */
+.block.block-col.block-sub-row > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.block.block-row {
+  flex-direction: row;
+}
+
+.block.block-code {
+  border: 1px solid black;
+  padding: 0.25rem;
+}
+
+.block-mt {
+  margin-top: 10px;
+}
+
+.activity {
+  margin-top: 15px;
+}
+
+.activity-name {
+  margin-bottom: 10px;
+}
+
+.activity::before {
+  content: "";
+  display: inline-block;
+  background: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 50%;
+}

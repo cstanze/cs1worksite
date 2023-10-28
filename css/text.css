@@ -1,0 +1,38 @@
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+a {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+a:hover {
+  filter: brightness(55%);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.mono {
+  font-family: var(--monospace);
+}
+
+.external-links > a {
+  color: #00747a; 
+}
+
+.external-links > a::after {
+  content: " \1F855";
+  /* color: var(--accent); */
+}
+

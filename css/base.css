@@ -1,0 +1,33 @@
+@import url('/css/fonts.css') layer(fonts);
+@import url('/css/blocks.css') layer(blocks);
+@import url('/css/text.css') layer(text);
+
+@layer base {
+
+  :root {
+    --accent: #3245ff;
+    --accent-dark: #1a1a2e;
+    --accent-light: #bc52ee;
+    --black: #05050b;
+
+    --monospace: 'Cartograph CF', monospace;
+    --sans: 'Nimbus Sans', sans-serif;
+  }
+
+  html {
+    font-family: sans-serif;
+    color: white;
+    /* background: linear-gradient(180deg, #05050b 0%, #1a1a2e 100%); */
+    background: linear-gradient(0deg, var(--black) 0%, var(--accent-dark) 100%);
+    background-attachment: fixed;
+
+
+    font-family: var(--sans);
+    font-variant-ligatures: none;
+  }
+
+  code {
+    font-family: var(--monospace);
+  }
+
+}
