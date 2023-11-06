@@ -1,6 +1,7 @@
 @import url('./fonts.css') layer(fonts);
 @import url('./blocks.css') layer(blocks);
 @import url('./text.css') layer(text);
+@import url('./collapse.css') layer(collapse);
 
 @layer base {
 

@@ -1,0 +1,47 @@
+.collapsible-toggle {
+  display: none;
+}
+
+/* requires :has support */
+@supports selector(p:has(> p)) {
+  .activity-name-collapse {
+    cursor: pointer;
+  }
+
+  .activity-name-collapse::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+  }
+
+  .activity-collapsible {
+    max-height: 0px;
+    overflow: hidden;
+
+    transition: max-height .3s ease-out;
+  }
+
+  .activity-name-collapse:has(> .collapsible-toggle:checked) + .activity-collapsible {
+    max-height: 100vh;
+
+    transition: max-height .3s ease-out;
+  }
+
+  .activity-name-collapse:has(> .collapsible-toggle:checked)::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  
+  .activity-name-collapse:has(> .collapsible-toggle:checked) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

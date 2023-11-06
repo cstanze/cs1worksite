@@ -36,3 +36,10 @@ a:hover {
   /* color: var(--accent); */
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.textblock {
+  margin: 1rem;
+}

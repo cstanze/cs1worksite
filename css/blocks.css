@@ -41,6 +41,13 @@
   margin-bottom: 10px;
 }
 
+/* Specify a very specific rule to keep backwards compat */
+label.activity-name {
+  font-size: 1.17rem;
+  margin-top: .83em;
+  display: block;
+}
+
 .activity::before {
   content: "";
   display: inline-block;
@@ -49,5 +56,5 @@
   top: 0;
   left: 0;
   height: 1px;
-  width: 50%;
+  width: 55%;
 }
