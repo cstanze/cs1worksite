@@ -6,6 +6,7 @@
 @supports selector(p:has(> p)) {
   .activity-name-collapse {
     cursor: pointer;
+    user-select: none;
   }
 
   .activity-name-collapse::before {
